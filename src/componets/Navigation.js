@@ -24,7 +24,7 @@ const [openMenu, setOpenMenu] = useState(false)
               <ul className="flex gap-14">
                 <div className=" cursor-not-allowed">  <img src={Logo} alt="Logo" /></div>
                  <div className="Navigation  hidden md:flex gap-16 ">
-                 <li onClick={() => setIsOpen((prev) => !prev)} className="cursor-pointer relative"><div className="flex gap-1"><div>Features</div><div>{!IsOpen ? <img alt="" className="pt-2" src={DownIcon}/> : <img className="pt-2" alt="" src={UpIcon}/>  }</div></div>
+                 <li onClick={() => setIsOpen((prev) => !prev)} className="group cursor-pointer relative"><div className="flex gap-1 hover:text-almost-black"><div>Features</div><div>{!IsOpen ? <img alt="" className="pt-2" src={DownIcon}/> : <img className="pt-2" alt="" src={UpIcon}/>  }</div></div>
                  {!IsOpen ?  "" :    
                 <div className="-left-28  hidden md:block absolute  font-medium shadow-xl p-10 rounded-xl space-y-4  bg-white  ">
                 <Dropdown text="TodoList" img={TodoListIcon} />
@@ -33,8 +33,8 @@ const [openMenu, setOpenMenu] = useState(false)
                 <Dropdown text="Planing" img={PlaningIcon} />
                 </div> }
                  </li>
-                    <li onClick={() => setIsOpen2((prev) => !prev)}className="cursor-pointer">
-                    <div className="flex gap-1"><div>Company</div><div>{!IsOpen2 ? <img alt="" className="pt-2" src={DownIcon}/> : <img className="pt-2" alt="" src={UpIcon}/>  }</div></div>
+                    <li onClick={() => setIsOpen2((prev) => !prev)}className="group cursor-pointer">
+                    <div className="flex gap-1 group-hover:text-black"><div>Company</div><div>{!IsOpen2 ? <img alt="" className="pt-2 group-hover:text-black" src={DownIcon}/> : <img className="pt-2" alt="" src={UpIcon}/>  }</div></div>
                 {!IsOpen2 ? "" : 
                 <div className="absolute hidden md:block pt-7 font-medium shadow-xl w-32 h-40 rounded-xl space-y-4  bg-white">
                 <Dropdown text="History" />
@@ -42,8 +42,8 @@ const [openMenu, setOpenMenu] = useState(false)
                 <Dropdown text="Blog" />
                 </div>}
                     </li>
-                    <li className="cursor-pointer">Careers</li>
-                    <li className="cursor-pointer">About</li>
+                    <li className="cursor-pointer hover:text-almost-black">Careers</li>
+                    <li className="cursor-pointer hover:text-almost-black">About</li>
                  </div>
                 </ul>
                 <div>

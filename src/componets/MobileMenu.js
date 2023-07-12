@@ -27,9 +27,9 @@ function MobileMenu() {
                     </div>
                     }
                     </li>
-                    <li className=" cursor-pointer" onClick={() => setmobileSubNavOpen2((prev) => !prev)}>
-                    <div className="flex gap-1"><div>Features</div>
-                    <div>{!mobileSubNavOpen2 ? <img alt="" className="pt-3" src={DownIcon}/> : <img alt="" className="pt-3" src={UpIcon}/>  }</div></div>
+                    <li className="cursor-pointer" onClick={() => setmobileSubNavOpen2((prev) => !prev)}>
+                    <div className="flex gap-1 -700 "><div>Features</div>
+                    <div>{!mobileSubNavOpen2 ? <img alt="" className="pt-3 group-hover:text-almost-black" src={DownIcon}/> : <img alt="" className="pt-3 group-[hover]:text-almost-black" src={UpIcon}/>  }</div></div>
                     {!mobileSubNavOpen2 ? "" :
                   <div className="p-4 space-y-2">
                   <Dropdown text="History" />
